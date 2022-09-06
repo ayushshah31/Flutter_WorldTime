@@ -35,7 +35,7 @@ class _HomeState extends State<Home> {
             padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
             child: Column(
               children: <Widget>[
-                FlatButton.icon(
+                IconButton(
                     onPressed: () async {
                       dynamic result = await Navigator.pushNamed(context, '/location');
                       setState(() {
@@ -51,12 +51,12 @@ class _HomeState extends State<Home> {
                       Icons.edit_location,
                       color: Colors.grey[300],
                     ),
-                    label: Text(
-                      'Edit Location',
-                      style: TextStyle(
-                        color: Colors.grey[600],
-                    )
-                    )
+                    // child: Text(
+                    //   'Edit Location',
+                    //   style: TextStyle(
+                    //     color: Colors.grey[600],
+                    // )
+                    // )
                 ),
                 SizedBox(height: 210.0,),
                 Row(
